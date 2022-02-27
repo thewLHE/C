@@ -1,0 +1,23 @@
+/*
+#include //전처리 지시자
+stdio.h//헤더파일 : 전처리 지사자와 자료의 재정의(typedef), 함수원형정의(prototype) 등과 같은 문장이 있는 텍스트 파일
+
+#define //매크로 상수를 정의하는 전처리 지시자 -> 매크로 상수를 정의
+
+pritnf() //출력함수 /형식지정자 지정이 가능하다.
+
+scanf() //입력함수 : 표준입력으로부터 여러 종류의 자료값을 훑어 주소 연산자 &가 붙은 변수 목록을 저장한다.
+getchar()//문자 하나의 입력 매크로 함수
+putchar()//출력하기 위한 매크로 함수
+*/
+#include<stdio.h>
+
+#define PI 3.14
+#define PRT printf("종료 매크로")
+#define SQUARE(x) ((x)*(x))
+
+int main(void)
+{
+  int a=0,b=12;
+  return 0;
+}
