@@ -3,3 +3,4 @@
 
 @ Repetition : 같거나 비슷한 일을 여러번 수행하는 작업
 */
+#define _CRC_SECURE_NO_WARNINGS
