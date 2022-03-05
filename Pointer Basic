@@ -9,8 +9,8 @@
   
   /*일반변수와 포인터 변수의 차이
   int data =100; // 변수data는 정수를 저장하는 "일반변수"
-  int *p;   //변수p는 정수 int를 저장하는 일반변수의 주소를 저장하는 "포인터 변수"
-  p=&data;  //포인터 p는 이제 data를 가르키므로-data주소값을 갖는다.
+  int *p;   //변수p는 정수 int를 저장하는 일반변수의 주소를 저장하는 "포인터 변수"=
+  p=&data;  //포인터 p는 이제 data를 가르키므로-data주소값을 갖이고 data의 변수를 참조하게 된다.
   */
 */
 
@@ -19,8 +19,21 @@
   
   직접참조(direct access) : 변수 int data 자체를 사용해 자신을 참조하는 방식
   간접참조(indirect access) : int *p를 이용해서 data를 참조하는 방식
+  
+  int data =100;
+  char ch ='A';
+  int *ptrint=&data;
+  int *ptrchar=&ch;
+  printf("indrect access %d %c :", *ptrint, *ptrchar);//각각은 변수 data와 ch와 동일하게 되어진다.
+  
+  *ptrint=200;//변수 data를 *ptrint로 간접참조하여 그 내용을 수정
+  *ptrchar="B"; //변수 ch를 *ptrchar로 간접참조하여 그 내용을 수정
+  printf("direct access %d %c :", data,ch)//
 */
-
+/*
+  주소연산 : 포인터 변수는 간단한 더하기와 뺼샘 연산으로 이웃한 변수의 주소 연산을 수행할 수 있다. 이는 포인터가 가리키는 변수 크기에 비례한 연산이다.
+  //더하기 뺼샘 연산에는 포인터 변수가 피연산자로 참여가 가능하다.
+*/
 /*
   명시적 형변환 : 포인터 변수는 동일한 자료형끼리만 대입이 가능하며 다를 경우 오류가 발생 | 그러기에 명시적으로 형변환을 해주어야 한다. 
   -> ex] int v= 0x616;
