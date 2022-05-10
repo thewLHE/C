@@ -1,0 +1,6 @@
+/* 프로그램의 실행 순서의 원칙은 sequential 실행. 즉, 프로그램은 main함수 내부에서 배치된 문장의 순차적 실행 흐름이였다.
+@ Con-trol statement : 프로그램 실행 흐름에서도 순차적인 실행뿐만이 아닌 선택과 반복 등 순차적인 실행을 변형시켜 프로그램의 실행 순서를 제어하는 문
+
+@ Repetition : 같거나 비슷한 일을 여러번 수행하는 작업
+*/
+#define _CRC_SECURE_NO_WARNINGS
